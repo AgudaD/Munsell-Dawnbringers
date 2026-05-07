@@ -1,11 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="py-4 px-12">
+      <nav class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold">NexGen</h1>
+
+        <!-- larger view -->
+        <div class="hidden md:flex items-center gap-24">
+          <ul class="rounded-full p-1 flex items-center justify-center gap-8">
+            <a href="./index.html">
+                <li class="bg-white rounded-full py-2 px-4 cursor-pointer">Home</li>
+            </a>
+            <a href="./profile.html">
+              <li class="py-2 px-4 cursor-pointer">Profile</li>
+            </a>
+            <a href="./contact.html">
+              <li class="py-2 px-4 cursor-pointer">Contact</li>
+            </a>
+          </ul>
+
+          <section class="space-x-5">
+            <button class="bg-zinc-200 nav-btn">Log in</button>
+            <button class="bg-emerald-400 nav-btn text-white">
+              Get started
+            </button>
+          </section>
+        </div>
+
+        <!-- burger menu icon -->
+         <div class="space-y-1 md:hidden">
+          <div class="bg-black w-5 h-0.5 rounded-md"></div>
+          <div class="bg-black w-5 h-0.5 rounded-md"></div>
+          <div class="bg-black w-5 h-0.5 rounded-md"></div>
+         </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="bg-emerald-700 px-12 py-6 text-white flex flex-col items-start justify-between md:flex-row relative"
+      >
+        <div>
+          <h2 class="text-[3.3rem] font-bold leading-tight">
+            Smart banking, <br />
+            made for you
+          </h2>
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.!
+          </p>
+          <button class="bg-yellow-200 nav-btn text-white mt-8">
+            Explore tools
+          </button>
+        </div>
+        
+        <img src="/image.svg" alt="" />
+
+        <img src="https://cdn.pixabay.com/photo/2012/04/01/19/22/black-24152_1280.png" alt="" class="w-24 absolute right-[300px] top-0">
+
+      </section>
+
+      <section class="mt-12 py-6 px-12">
+        <h2
+          class="text-[3.3rem] font-bold leading-tight text-center capitalize"
+        >
+          why choose us?
+        </h2>
+        <p class="text-center">
+          Banking made easy, secure, and rewarding for you.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
+          <div
+            class="flex flex-col items-center justify-center bg-zinc-200 p-5 rounded-md space-y-3 shadow drop-shadow-sm"
+          >
+            <img
+              src="https://images.icon-icons.com/4160/PNG/512/safe_lock_secure_safety_protect_compliance_security_icon_261671.png"
+              alt=""
+              class="w-48 h-48 object-contain"
+            />
+            <div class="text-center space-y-3">
+              <h2 class="text-2xl font-semibold">Safe & Secure</h2>
+              <p class="text-sm max-w-[12rem]">
+                Advanced encryption and multi-factor login
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center bg-green-100 p-5 rounded-md space-y-3 shadow drop-shadow-sm"
+          >
+            <img
+              src="https://www.freeiconspng.com/uploads/alarm-clock-icon-6.png"
+              alt=""
+              class="w-48 h-48 object-contain"
+            />
+            <div class="text-center space-y-3">
+              <h2 class="text-2xl font-semibold">Always On</h2>
+              <p class="text-sm max-w-[12rem]">
+                24/7 account access from anywhere
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center bg-yellow-50 p-5 rounded-md space-y-3 shadow drop-shadow-sm"
+          >
+            <img
+              src="https://png.pngtree.com/png-vector/20230415/ourmid/pngtree-reward-line-icon-vector-png-image_6708706.png"
+              alt=""
+              class="w-48 h-48 object-contain"
+            />
+            <div class="text-center space-y-3">
+              <h2 class="text-2xl font-semibold">Rewarding</h2>
+              <p class="text-sm max-w-[12rem]">
+                Cashback, points & partner discounts
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-emerald-700 text-center text-white p-24 mt-24">
+      this is my footer
+    </footer>
+  </body>
 </html>
